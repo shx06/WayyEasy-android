@@ -103,7 +103,7 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
         }
 
         holder.action.setOnClickListener(v-> {
-            Toast.makeText(context, "initiate calling", Toast.LENGTH_SHORT).show();
+            initiateCalling();
         });
 
         holder.remove.setOnClickListener(v -> {
@@ -131,5 +131,8 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
             action = itemView.findViewById(R.id.notification_action);
             remove = itemView.findViewById(R.id.notification_remove);
         }
+    }
+
+    private void initiateCalling() {
     }
 }
