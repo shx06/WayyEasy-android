@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@drawable/scroll_width"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_ok"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/non_medical_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/non_medi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="As per IRDAI's guideline, certain optional items used during the treatment or hospitalization do not considered as medical expenses. These expenses are not covered in most of the health insurance these expenses comes under non-medical expenses." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Below are the list of items or services which comes under non-medical expenses:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="&#8226;   Hand Wash\n&#8226;   Caps\n&#8226;   Comb\n&#8226;   Food Cover\n&#8226;   Gown\n&#8226;   Slippers\n&#8226;   Tissue Paper\n&#8226;   Tooth paste/brush\n&#8226;   House keeping charges\n&#8226;   Pulse oximeter charges" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="&#8226;   Hair removal cream\n&#8226;   Eye Pad\n&#8226;   Surgical Blade, Harmoncscalpel, Shaver\n&#8226;   Apron\n&#8226;   Disposable Razor Charges\n&#8226;   Eye Shield\n&#8226;   Camera Cover\n&#8226;   Gauze\n&#8226;   Arthroscopy and Endoscopy Instruments\n&#8226;   Surgical Drill\n&#8226;   X-Ray Film\n&#8226;   Cotton\n&#8226;   Vaccination Charges\n&#8226;   Paper Gloves\n&#8226;   Referral Doctor Charges" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Above are the list of most common non-medical items which most of the health insurance do not cover. For more detail please visit our customer support team." />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Ok"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/theme_color"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

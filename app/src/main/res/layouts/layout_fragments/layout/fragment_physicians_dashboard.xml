@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PhysiciansDashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="5dp"
+        android:paddingTop="@dimen/_10sdp">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/doctors_shimmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_search_hospital_item" />
+
+                <include layout="@layout/shimmer_search_hospital_item" />
+
+                <include layout="@layout/shimmer_search_hospital_item" />
+
+                <include layout="@layout/shimmer_search_hospital_item" />
+
+                <include layout="@layout/shimmer_search_hospital_item" />
+
+                <include layout="@layout/shimmer_search_hospital_item" />
+
+                <include layout="@layout/shimmer_search_hospital_item" />
+
+                <include layout="@layout/shimmer_search_hospital_item" />
+
+                <include layout="@layout/shimmer_search_hospital_item" />
+
+                <include layout="@layout/shimmer_search_hospital_item" />
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/single_physician_item_design" />
+
+        <ProgressBar
+            android:id="@+id/progress_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

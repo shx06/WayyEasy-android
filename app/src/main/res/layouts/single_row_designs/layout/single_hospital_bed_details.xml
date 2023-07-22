@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sl_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sl. No."
+            android:textColor="@color/black"
+            android:layout_weight="2"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/bed_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Type of\n Beds"
+            android:textColor="@color/black"
+            android:layout_weight="3.5"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/total_beds"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Beds"
+            android:textColor="@color/black"
+            android:layout_weight="3"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Price/\n day (Rs.)"
+            android:textColor="@color/black"
+            android:layout_weight="3"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/book"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:cursorVisible="true"
+            android:textColor="@color/red"
+            android:layout_weight="3.5"
+            android:gravity="center_horizontal" />
+    </TableRow>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/room_details_rv" />
+</TableLayout>

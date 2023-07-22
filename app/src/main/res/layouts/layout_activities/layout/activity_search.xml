@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layout_replace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_10sdp"
+            tools:context=".Activities.Search.SearchActivity">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/search_shimmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/search_hospital_item" />
+
+            <ProgressBar
+                android:id="@+id/progress_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

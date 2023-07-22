@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="175dp"
+    android:layout_height="200dp"
+    android:paddingRight="4dp"
+    android:elevation="10dp"
+    android:id="@+id/item_layout_shimmer"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@color/grey"
+        android:id="@+id/hospital_img" />
+
+    <TextView
+        android:id="@+id/hospital_name"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/grey"
+        android:layout_height="wrap_content"
+        android:text="Hospital Name"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/hospital_address"
+        android:layout_width="wrap_content"
+        android:background="@color/grey"
+        android:layout_height="wrap_content"
+        android:text="Address of the hospital"
+        android:layout_weight="1"
+        android:textSize="15sp" />
+
+<!--    <RatingBar-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        android:background="@color/grey"-->
+<!--        android:id="@+id/hospital_ratings"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        style="?android:attr/ratingBarStyleSmall"-->
+<!--        android:numStars="5"-->
+<!--        android:stepSize="0.1"-->
+<!--        android:isIndicator="true" />-->
+
+</androidx.appcompat.widget.LinearLayoutCompat>

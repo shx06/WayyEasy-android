@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_hollow_theme_round"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:weightSum="4"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/contact_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Mobile number"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/red"
+        android:text="Call"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+</LinearLayout>

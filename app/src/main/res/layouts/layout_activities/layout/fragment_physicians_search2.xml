@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    tools:context=".Activities.Search.Physicians.PhysiciansSearch2">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"
+        android:id="@+id/close_activity"
+        android:src="@drawable/ic_go_back"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:fabCustomSize="50dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingTop="@dimen/_10sdp">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/doctors_shimmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+
+                    <include layout="@layout/shimmer_search_hospital_item" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/recycler_View" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:id="@+id/empty_list_section"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="50dp"
+                    android:src="@drawable/empty_list"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Oops! no doctor found" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

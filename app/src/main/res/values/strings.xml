@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">WayyEasy</string>
+    <string name="opened">open</string>
+    <string name="close">close</string>
+    <string name="toggle_color">#ffffff</string>
+    <string name="ratings_reviews"><![CDATA[Ratings & Reviews]]></string>
+    <string name="thank_you_msg">Thanks for using our app &#128522;</string>
+    <string name="wayyeasy_doctors_app_url">https://play.google.com/store/apps/details?id=com.wayyeasy.wayyeasydoctors</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="incoming_call_activity">Activities.Physicians.IncomingInvitation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Transgender</item>
+    </string-array>
+
+    <string-array name="speciality">
+        <item>Allergists</item>
+        <item>Anesthesiologists</item>
+        <item>Anesthesists</item>
+        <item>Cardiologists</item>
+        <item>Chest Medicine</item>
+        <item>Colon and Rectal Surgeons</item>
+        <item>Critical Care Medicine Specialists</item>
+        <item>Dental</item>
+        <item>Dermatologists</item>
+        <item>ENT</item>
+        <item>Eye</item>
+        <item>Gastroenterologists</item>
+        <item>General Surgeons</item>
+        <item>General Surgery</item>
+        <item>Hematologists</item>
+        <item>Infectious Disease Specialists</item>
+        <item>Internists</item>
+        <item>Nephrologists</item>
+        <item>Neurologists</item>
+        <item>Obstetrics and Gynecologists</item>
+        <item>Oncologists</item>
+        <item>Ophthalmologists</item>
+        <item>Orthopedics</item>
+        <item>Pediatrics</item>
+        <item>Pathologists</item>
+        <item>Physiatrists</item>
+        <item>Plastic Surgeons</item>
+        <item>Radiologists</item>
+        <item>Rheumatologists</item>
+        <item>Urologists</item>
+    </string-array>
+</resources>

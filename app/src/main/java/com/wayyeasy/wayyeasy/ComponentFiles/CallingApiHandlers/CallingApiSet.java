@@ -1,0 +1,14 @@
+package com.wayyeasy.wayyeasy.ComponentFiles.CallingApiHandlers;
+
+import java.util.HashMap;
+import retrofit2.Call;
+import retrofit2.http.Body;
+import retrofit2.http.HeaderMap;
+import retrofit2.http.POST;
+
+public interface CallingApiSet {
+    //realtime messaging
+    @POST("send")
+    Call<String> sendRemoteMessage(@HeaderMap HashMap<String, String> headers,
+                                   @Body String remoteBody);
+}

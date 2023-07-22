@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/doctors"
+        android:icon="@drawable/doctors"
+        android:title="Doctors" />
+
+    <item android:id="@+id/opds"
+        android:icon="@drawable/opds"
+        android:title="OPDs" />
+
+    <item android:id="@+id/path_labs"
+        android:icon="@drawable/path_labs"
+        android:title="Path Labs" />
+
+<!--    <item android:id="@+id/hospitals"-->
+<!--        android:icon="@drawable/hospitals"-->
+<!--        android:title="Hospitals" />-->
+</menu>
